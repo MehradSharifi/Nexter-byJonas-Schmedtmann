@@ -1,5 +1,5 @@
 .features {
-    grid-column: center-start / center-end; 
+    grid-column: center-start / center-end;
 
     margin: 15rem 0;
 
@@ -8,6 +8,11 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 6rem;
     align-items: start;
+
+
+    @media only screen and (max-width: $bp-medium) {
+       
+    }
 }
 
 .feature {
@@ -20,7 +25,7 @@
     &__icon {
         fill: $color-primary;
         width: 4.5rem;
-        height: 4.5rem ;
+        height: 4.5rem;
         transform: translateY(-1rem);
 
         grid-row: 1 / span 2;
